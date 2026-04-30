@@ -37,7 +37,7 @@ export function Services() {
       <section className="hero-panel">
         <div className="absolute inset-0">
           <img
-            src="https://images.unsplash.com/photo-1687369595840-e96a912586f1?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1920"
+            src="https://images.unsplash.com/photo-1663530761401-15eefb544889?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1920"
             alt="Chef plating"
             className="h-full w-full object-cover"
           />

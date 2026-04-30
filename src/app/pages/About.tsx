@@ -31,7 +31,7 @@ export function About() {
       <section className="hero-panel">
         <div className="absolute inset-0">
           <img
-            src="https://images.unsplash.com/photo-1759521296013-559479e2a891?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1920"
+            src="https://images.unsplash.com/photo-1662982692115-743f9e716b98?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1920"
             alt="Chef Justin"
             className="h-full w-full object-cover"
           />

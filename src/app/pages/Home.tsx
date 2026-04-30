@@ -7,7 +7,7 @@ export function Home() {
       <section className="hero-panel">
         <div className="absolute inset-0">
           <img
-            src="https://images.unsplash.com/photo-1759521296013-559479e2a891?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwzfHxwcm9mZXNzaW9uYWwlMjBjaGVmJTIwcG9ydHJhaXQlMjByZXN0YXVyYW50fGVufDF8fHx8MTc3NzQ0MTE3MHww&ixlib=rb-4.1.0&q=80&w=1920"
+            src="https://images.unsplash.com/photo-1775498053538-ec293e32b963?fm=jpg&q=60&w=3000&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwzfHxwcm9mZXNzaW9uYWwlMjBjaGVmJTIwcG9ydHJhaXQlMjByZXN0YXVyYW50fGVufDF8fHx8MTc3NzQ0MTE3MHww&ixlib=rb-4.1.0&q=80&w=1920"
             alt="Chef Justin"
             className="h-full w-full object-cover"
           />
