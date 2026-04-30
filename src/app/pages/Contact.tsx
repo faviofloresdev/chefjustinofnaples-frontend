@@ -28,22 +28,22 @@ export function Contact() {
               <div className="grid grid-cols-1 gap-8 md:grid-cols-2">
                 <div>
                   <label htmlFor="firstName" className="form-label">First Name</label>
-                  <input type="text" id="firstName" className="form-control" />
+                  <input type="text" id="firstName" className="form-control" placeholder="John" />
                 </div>
                 <div>
                   <label htmlFor="lastName" className="form-label">Last Name</label>
-                  <input type="text" id="lastName" className="form-control" />
+                  <input type="text" id="lastName" className="form-control" placeholder="Doe" />
                 </div>
               </div>
 
               <div>
                 <label htmlFor="email" className="form-label">Email</label>
-                <input type="email" id="email" className="form-control" />
+                <input type="email" id="email" className="form-control" placeholder="john@email.com" />
               </div>
 
               <div>
                 <label htmlFor="phone" className="form-label">Phone</label>
-                <input type="tel" id="phone" className="form-control" />
+                <input type="tel" id="phone" className="form-control" placeholder="(239) 555-0100" />
               </div>
 
               <div>
@@ -58,12 +58,12 @@ export function Contact() {
 
               <div>
                 <label htmlFor="guests" className="form-label">Number of Guests</label>
-                <input type="number" id="guests" className="form-control" />
+                <input type="number" id="guests" className="form-control" placeholder="8" />
               </div>
 
               <div>
                 <label htmlFor="date" className="form-label">Preferred Date</label>
-                <input type="date" id="date" className="form-control" />
+                <input type="date" id="date" className="form-control" placeholder="mm/dd/yyyy" />
               </div>
 
               <div>

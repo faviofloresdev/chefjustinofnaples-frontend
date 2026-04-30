@@ -121,7 +121,7 @@ export function Services() {
                 </p>
                 <div className="stack-sm pt-2">
                   {[
-                    'Hors d’oeuvres & grazing tables',
+                    'Hors dâ€™oeuvres & grazing tables',
                     'Buffets up to 50 guests',
                     'Events up to 100 guests'
                   ].map((item) => (
@@ -219,7 +219,7 @@ export function Services() {
       <section className="page-section page-section-soft">
         <div className="content-shell-narrow text-center stack-lg">
           <h2 className="type-display">Request Booking</h2>
-          <p className="type-body">Let’s create an unforgettable culinary experience together.</p>
+          <p className="type-body">Letâ€™s create an unforgettable culinary experience together.</p>
           <div>
             <Link to="/contact">
               <button className="cta-button px-16 py-5 text-lg">Book Your Experience</button>
