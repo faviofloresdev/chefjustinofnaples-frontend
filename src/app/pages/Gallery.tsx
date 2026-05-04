@@ -1,6 +1,40 @@
 import { Link } from 'react-router-dom';
+import { useEffect } from "react";
+import gsap from "gsap";
 
 export function Gallery() {
+
+	useEffect(() => {
+	  const ctx = gsap.context(() => {
+
+		const tl = gsap.timeline();
+
+		tl.from(".hero-panel h2", {
+		  opacity: 0,
+		  y: 20,
+		  duration: 0.8
+		})
+		.from(".hero-panel h1", {
+		  opacity: 0,
+		  y: 40,
+		  duration: 1
+		}, "-=0.4")
+		.from(".hero-panel p", {
+		  opacity: 0,
+		  y: 30,
+		  duration: 0.8
+		}, "-=0.5")
+		.to(".cta-button-hero", {
+		  opacity: 1,
+		  y: 0,
+		  duration: 0.6
+		}, "-=0.4");
+
+	  });
+
+	  return () => ctx.revert();
+	}, []);
+
   const galleryImages = [
     'https://images.unsplash.com/photo-1775481132664-53ce2276d0ee?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1080',
     'https://images.unsplash.com/photo-1759277513239-3ebfc180f23c?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1080',
@@ -30,6 +64,11 @@ export function Gallery() {
           <p className="type-body type-body-light mx-auto max-w-2xl">
             A curated selection of private dining, events, and signature moments crafted by Chef Justin..
           </p>
+			<div>
+            <Link to="/contact">
+              <button className="cta-button-hero px-16 py-5 text-lg">Book Your Experience</button>
+            </Link>
+          </div>
         </div>
       </section>
 

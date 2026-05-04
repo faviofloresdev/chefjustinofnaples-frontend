@@ -1,4 +1,6 @@
 import { Link } from 'react-router-dom';
+import { useEffect } from "react";
+import gsap from "gsap";
 
 const experienceItems = [
   '20+ Years of Fine Dining Experience',
@@ -26,6 +28,38 @@ const processSteps = [
 ];
 
 export function About() {
+
+	useEffect(() => {
+	  const ctx = gsap.context(() => {
+
+		const tl = gsap.timeline();
+
+		tl.from(".hero-panel h2", {
+		  opacity: 0,
+		  y: 20,
+		  duration: 0.8
+		})
+		.from(".hero-panel h1", {
+		  opacity: 0,
+		  y: 40,
+		  duration: 1
+		}, "-=0.4")
+		.from(".hero-panel p", {
+		  opacity: 0,
+		  y: 30,
+		  duration: 0.8
+		}, "-=0.5")
+		.to(".cta-button-hero", {
+		  opacity: 1,
+		  y: 0,
+		  duration: 0.6
+		}, "-=0.4");
+
+	  });
+
+	  return () => ctx.revert();
+}, []);
+
   return (
     <>
       <section className="hero-panel">
@@ -46,6 +80,11 @@ export function About() {
             Private chef based in Naples, offering refined dining experiences inspired by over two
             decades of fine dining excellence.
           </p>
+			<div>
+            <Link to="/contact">
+              <button className="cta-button-hero px-16 py-5 text-lg">Book Your Experience</button>
+            </Link>
+          </div>
         </div>
       </section>
 
