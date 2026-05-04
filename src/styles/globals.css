@@ -552,7 +552,27 @@
     box-shadow: var(--shadow-deep);
   }
 
-  .cta-button {
+  .cta-button-hero {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    border-radius: 9999px;
+    background: linear-gradient(135deg, #e38505 0%, #ffd200 100%);
+    color: var(--color-ink);
+    font-family: var(--font-sans);
+    font-size: var(--type-size-body);
+    font-weight: 500;
+    line-height: 1.2;
+    padding: 1rem 2.75rem;
+    cursor: pointer;
+    box-shadow: 0 10px 30px rgba(227, 133, 5, 0.3);
+    transition: transform 180ms ease, box-shadow 180ms ease, opacity 180ms ease;
+	opacity: 0;
+	transform: translateY(20px);
+  }
+  
+   .cta-button {
     display: inline-flex;
     align-items: center;
     justify-content: center;
